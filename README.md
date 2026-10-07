@@ -18,11 +18,11 @@
 ### 3、GPU加速环境配置
 1. `nvidia-smi`显示显卡状态信息，如下：
 <img width="649" height="583" alt="a9a532e3a380ba952afaefc8aae6ee1" src="https://github.com/user-attachments/assets/5edd0986-96d4-4caf-b4b2-79359a0f02bd" />
-2. 在NVIDIA官网下载对应版本的CUDA Toolkit及cuDNN并安装，这里不在进行演示。以下为验证CUDA是否安装成功（cuDNN不能单独运行，后面结合Pytorch验证，这里不做验证）：
+2. 在NVIDIA官网下载对应版本的CUDA Toolkit及cuDNN并安装，这里不在进行演示。以下为验证CUDA是否安装成功（cuDNN不能单独运行，后面结合Pytorch验证，这里不做验证）。
 
 ### 4、PyTorch安装
 1. 结合CUDA版本至PyTorch官网选择对应版本进行下载，页面如下：
-
+<img width="728" height="285" alt="ebf261a9d415b06d83e519988df2830" src="https://github.com/user-attachments/assets/4d4296dc-26c3-4947-b661-b014badef680" />
 2. `conda list pytorch`可以看到已经成功安装，信息如下：
 ### 5、PyTorch GPU加速环境验证
 - `torch.cuda.is_available()`、`torch.backends.cudnn.is_available()`结果进行验证，信息如下：
