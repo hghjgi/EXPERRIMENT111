@@ -13,9 +13,11 @@
 ### 2、conda的基本操作与OpenCV的安装
 1. `conda create -n [env_name] python==[version]`创建虚拟环境并制定python版本。
 2. `activate cv`进入创建的虚拟环境，`pip install opencv-python`安装OpenCV。演示如下：
+<img width="548" height="736" alt="4b86397c2879487946fcde11ce1da10" src="https://github.com/user-attachments/assets/43bcad6a-c3ea-489a-9945-25776a6a2915" />
+
 ### 3、GPU加速环境配置
 1. `nvidia-smi`显示显卡状态信息，如下：
-
+<img width="649" height="583" alt="a9a532e3a380ba952afaefc8aae6ee1" src="https://github.com/user-attachments/assets/5edd0986-96d4-4caf-b4b2-79359a0f02bd" />
 2. 在NVIDIA官网下载对应版本的CUDA Toolkit及cuDNN并安装，这里不在进行演示。以下为验证CUDA是否安装成功（cuDNN不能单独运行，后面结合Pytorch验证，这里不做验证）：
 
 ### 4、PyTorch安装
