@@ -29,6 +29,7 @@
 - `torch.cuda.is_available()`、`torch.backends.cudnn.is_available()`结果进行验证，信息如下：
 <img width="476" height="111" alt="391af6259788f586d79c16269334a27" src="https://github.com/user-attachments/assets/ea8d013a-f49e-4757-8541-14c0589b2624" />
 验证通过！
+
 ## 三、实验结果与分析
 
 ### 1. 环境安装结果分析
