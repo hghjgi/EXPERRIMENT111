@@ -7,8 +7,8 @@
 ## 二、实验内容
 ### 1、Anaconda的安装及配置
 - 较为简单，不再进行阐述。演示如下
-结果图：<br>
-
+结果图：<img width="230" height="48" alt="a4a3df8fe49b02816567aa169c411ef" src="https://github.com/user-attachments/assets/c3367983-4609-4bab-9879-c40375e32bf3" />
+<img width="315" height="725" alt="afa3854a244aa467c577bb2c747b9e8" src="https://github.com/user-attachments/assets/7f723c85-9209-4b00-9a2f-3adb07680162" />
 
 ### 2、conda的基本操作与OpenCV的安装
 1. `conda create -n [env_name] python==[version]`创建虚拟环境并制定python版本。
@@ -24,7 +24,7 @@
 2. `conda list pytorch`可以看到已经成功安装，信息如下：
 ### 5、PyTorch GPU加速环境验证
 - `torch.cuda.is_available()`、`torch.backends.cudnn.is_available()`结果进行验证，信息如下：
-![PyTorch验证](/photos/Verification%20of%20GPU%20env.png)
+<img width="476" height="111" alt="391af6259788f586d79c16269334a27" src="https://github.com/user-attachments/assets/ea8d013a-f49e-4757-8541-14c0589b2624" />
 验证通过！
 ## 三、实验结果与分析
 
