@@ -6,35 +6,26 @@
 
 ## 二、实验内容
 ### 1、Anaconda的安装及配置
-打开Anaconda Prompt终端进行操作，
-- 查看conda版本 <br>
-- 查看conda配置信息 <br>
-```bash
-conda --version
-conda config --show
-```
+- 较为简单，不再进行阐述。演示如下
 结果图：<br>
 
 
 ### 2、conda的基本操作与OpenCV的安装
-- 创建虚拟环境并制定python版本 <br>
-- 进入创建的虚拟环境，安装OpenCV <br>
-```bash
-conda create -n cv python==3.10
-activate cv
-pip install opencv-python
-```
+1. `conda create -n [env_name] python==[version]`创建虚拟环境并制定python版本。
+2. `activate cv`进入创建的虚拟环境，`pip install opencv-python`安装OpenCV。演示如下：
 ### 3、GPU加速环境配置
- 显示显卡状态信息
-```bash
-nvidia-smi
-```
+1. `nvidia-smi`显示显卡状态信息，如下：
+
+2. 在NVIDIA官网下载对应版本的CUDA Toolkit及cuDNN并安装，这里不在进行演示。以下为验证CUDA是否安装成功（cuDNN不能单独运行，后面结合Pytorch验证，这里不做验证）：
 
 ### 4、PyTorch安装
-结合CUDA版本至PyTorch官网选择对应版本进行下载
-### 5、PyTorch GPU加速环境验证
-torch.cuda.is_available() 、torch.backends.cudnn.is_available() 结果进行验证
+1. 结合CUDA版本至PyTorch官网选择对应版本进行下载，页面如下：
 
+2. `conda list pytorch`可以看到已经成功安装，信息如下：
+### 5、PyTorch GPU加速环境验证
+- `torch.cuda.is_available()`、`torch.backends.cudnn.is_available()`结果进行验证，信息如下：
+![PyTorch验证](/photos/Verification%20of%20GPU%20env.png)
+验证通过！
 ## 三、实验结果与分析
 
 ### 1. 环境安装结果分析
